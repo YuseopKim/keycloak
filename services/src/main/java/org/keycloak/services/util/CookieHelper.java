@@ -140,6 +140,12 @@ public class CookieHelper {
     }
 
     public static Cookie getCookie(Map<String, Cookie> cookies, String name) {
+	logger.debugv("Cookie *****For 문*****");
+	for(String key : cookies.keySet()) {
+            Cookie value = cookies.get(key);
+	    logger.debugv(key + " : " + value.toString()); 
+	}
+
         Cookie cookie = cookies.get(name);
         if (cookie != null) {
             return cookie;
