@@ -14,9 +14,9 @@ import org.keycloak.saml.common.util.StringUtil;
 
 public class MalangIdentityProvider extends AbstractOAuth2IdentityProvider<MalangIdentityProviderConfig> implements SocialIdentityProvider<MalangIdentityProviderConfig> {
 
-        public static final String AUTH_URL = "https://accounts.malangmalang.com/oauth2/authorize";
-        public static final String TOKEN_URL = "https://api.malangmalang.com/accounts/oauth2/token";
-        public static final String PROFILE_URL = "https://api.malangmalang.com/accounts/oauth2/me";
+        public static final String AUTH_URL = "https://dev-accounts.malangmalang.com/oauth2/authorize";
+        public static final String TOKEN_URL = "https://dev-api.malangmalang.com/accounts/oauth2/token";
+        public static final String PROFILE_URL = "https://dev-api.malangmalang.com/accounts/oauth2/me";
         public static final String DEFAULT_SCOPE = "email";
 
         protected static final String PROFILE_URL_FIELDS_SEPARATOR = ",";
